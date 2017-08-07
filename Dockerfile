@@ -3,7 +3,7 @@ MAINTAINER safezpa safezpa<safezpa@gmail.com>
 
 RUN mkdir -p /opt/oracle
 WORKDIR /opt/oracle/
-RUN apt-get update && apt-get install -y zip && apt-get install libaio* && pip install --upgrade pip
+RUN apt-get update && apt-get install -y zip && apt-get install -y libaio* && pip install --upgrade pip
 COPY instantclient-basic-linux.x64-12.2.0.1.0.zip /opt/oracle/
 COPY instantclient-sdk-linux.x64-12.2.0.1.0.zip /opt/oracle/
 RUN unzip /opt/oracle/instantclient-basic-linux.x64-12.2.0.1.0.zip -d /opt/oracle/ && unzip /opt/oracle/instantclient-sdk-linux.x64-12.2.0.1.0.zip -d /opt/oracle/
