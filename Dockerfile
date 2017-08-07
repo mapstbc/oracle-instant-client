@@ -10,7 +10,7 @@ RUN cd /opt/oracle/instantclient_12_2
 RUN ln -s libclntsh.so.12.1 libclntsh.so
 RUN ln -s libocci.so.12.1 libocci.so
 RUN apt-get install libaio1
-RUN echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2:$LD_LIBRARY_PATH" >> /etc/profile
+RUN echo "export LD_LIBRARY_PATH=/opt/oracle/instantclient_12_2" >> /etc/profile
 RUN echo "export PATH=/opt/oracle/instantclient_12_2:$PATH" >> /etc/profile
 RUN python -m pip install cx_Oracle --pre
 RUN rm /opt/oracle/instantclient-basic-linux.x64-12.2.0.1.0.zip
