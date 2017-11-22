@@ -1,5 +1,5 @@
 FROM python:2.7.9
-MAINTAINER safezpa safezpa<safezpa@gmail.com>
+MAINTAINER mapstbc mapstbc<mapstbc@mapstbc.com>
 
 RUN mkdir -p /opt/oracle
 WORKDIR /opt/oracle/
